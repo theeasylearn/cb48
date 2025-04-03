@@ -53,6 +53,7 @@ binary operators.
             ! a == b 
 
         assignment operators
+        
             assignment operators are used to assign value to variables. one vary useful assignment operators are = other useful assignment operators also called shortend assignment operators
                 += it is used a+=b in case of a = a + b
                 -= it is used a-=b in case of a = a - b
