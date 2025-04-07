@@ -23,6 +23,7 @@ void main()
     {
         printf("\n number is odd");
     }
+    
     if(reminder==0 )
     {
         printf("\n number is even");
