@@ -17,7 +17,7 @@
 void main()
 {
     int number,first,last;
-    printf("Enter number");
+    printf("Enter 2 digit number (10 to 99)");
     scanf("%d",&number);
     last = number % 10;
     first = number / 10;
