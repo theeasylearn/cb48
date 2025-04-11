@@ -20,7 +20,6 @@ decision making
 
 7) write a program to check whether given year is leap year or not. 
 
-
 8) write a program to accept birth date and month from user. decide zodiac sign from below table 
 Aries: March 21–April 19
 Taurus: April 20–May 20
