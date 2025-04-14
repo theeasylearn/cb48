@@ -38,3 +38,10 @@ Pisces: February 19–March 20
 use below image
 https://asknebula.com/images/zodiac-compatibility/zodiac-compatibility-chart.png
 
+--------------------------------------------------------------------
+loop 
+1) write a program to print following pattern 
+    2   4   6   8   10  12  14  ... 100
+
+1) write a program to print following pattern 
+    99      88      77      66      55      ... 0
