@@ -57,3 +57,5 @@ loop
 
 6)  write a program to findout whether given number is composite number or not 
     
+7) write a program to findout compound interest of given amount, rate, year using do while loop 
+
