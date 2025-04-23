@@ -1,0 +1,22 @@
+create function calc
+1->add
+2->subtraction
+3->multiply
+4->div
+
+write a function taht print following: 2 args(n,lenght)
+if:
+1,5->
+1
+11
+111
+1111
+11111
+
+2,3->
+2
+22
+222
+
+0,1->
+0
