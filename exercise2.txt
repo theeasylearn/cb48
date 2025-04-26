@@ -20,3 +20,15 @@ if:
 
 0,1->
 0
+
+Create a function to calculate grade based on percentage
+Take marks for 5 subjects, calculate percentage, and print grade (A, B, C, etc.).
+
+Create a function to convert days to years, weeks, and days
+Input total days, and convert into years, weeks, and days (e.g., 373 → 1 yr, 1 wk, 1 day).
+
+Create a function to calculate Compound Interest
+Use the formula: CI = P * (1 + R/100)^T - P
+
+Create a function to print Fibonacci series
+Print the first N numbers in the Fibonacci sequence.
