@@ -8,6 +8,7 @@
 void main()
 {
     char name[50];
+    int n;
 
     printf("enter your name : ");
     for(int i=0 ; i<50 ; i++){
@@ -23,18 +24,17 @@ void main()
 
         if(name[i]=='\n')
         {
+            n=i;
             break;
         }
     }
-    printf("\n");
+    
 
-    for(int i=49 ; i>=0 ;i--){
+    for(int i=n-1 ; i>=0 ;i--){
         printf("%c",name[i]);
-
-        if(name[i]=='\n')
-        {
-            break;
-        }
     }
 
 }
+
+// dev\n
+// 0123
