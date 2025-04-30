@@ -24,7 +24,9 @@ void printboard(char board[9])
     printf("\n-------------\n");
 }
 
-void check(char sy,char board[9],int count){
+int check(char sy,char board[9])
+{
+    int count=0;
     if(board[0]==sy && board[1]==sy && board[2]==sy){
         printboard(board);
         printf("%c is winner",sy);
@@ -77,14 +79,16 @@ void check(char sy,char board[9],int count){
         count=1;
     
     }
+
+    return count;
 }
+
 
 void main()
 {
     char board[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char sign = 'x';
     int n;
-    int count=0;
 
     while (1)
     {
@@ -106,16 +110,29 @@ void main()
             }
         }
 
-        check('x',board,count);
-        if(count == 1)
+        
+        if(check('x',board) == 1)
         {
             break;
         }
 
-        check('o',board,count);
-        if(count == 1){
+        else if(check('o',board) == 1){
             break;
         }
+        
+        else{
+            if(board[0]!=' ' && board[1]!=' ' && board[2]!=' '  && board[3]!=' '  && board[4]!=' ' && board[5]!=' ' && board[6]!=' '  && board[7]!=' ' && board[8]!=' ' )
+            {
+                printboard(board);
+                printf("draw");
+                break;
+            }
+            
+            
+        }
+
+
+       
 
     }
 
