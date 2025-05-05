@@ -25,6 +25,34 @@ char *sign[12] = {
     "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
     "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"};
 
+// heart=2 , normal = 1 ,weel =0
+char compare_sign[12][12] = {
+    // Aries
+    {'g','n','g','n','g','f','g','f','f','f','g','n'},
+    // Taurus
+    {'n','f','n','g','f','g','f','g','n','g','f','g'},
+    // Gemini
+    {'g','n','f','f','g','f','g','n','f','g','g','n'},
+    // Cancer
+    {'n','g','f','g','n','g','f','g','f','g','f','g'},
+    // Leo
+    {'g','f','g','n','g','f','g','f','g','n','g','f'},
+    // Virgo
+    {'f','g','f','g','f','g','f','g','n','g','f','g'},
+    // Libra
+    {'g','f','g','f','g','f','g','f','g','f','g','f'},
+    // Scorpio
+    {'f','g','n','g','f','g','f','g','f','g','f','g'},
+    // Sagittarius
+    {'f','n','f','f','g','n','g','f','g','f','g','n'},
+    // Capricorn
+    {'f','g','f','g','n','g','f','g','f','g','f','g'},
+    // Aquarius
+    {'g','f','g','n','g','f','g','f','g','f','g','f'},
+    // Pisces
+    {'n','g','n','g','f','g','f','g','n','g','f','g'}
+};
+
 int getzodiac(int d, int m)
 {
 
@@ -98,6 +126,18 @@ void main()
         f =getzodiac(f_date,f_month);
         printf("Male zodiac Sign : %s",sign[m]);
         printf("\nFemale zodiac Sign : %s",sign[f]);
+
+        // printf("\n%c",compare_sign[m][f]);
+
+        if(compare_sign[m][f] == 'g'){
+            printf("\ngreate match");
+        }
+        else if(compare_sign[m][f] == 'f'){
+            printf("\nfavourite match");
+        }
+        else if(compare_sign[m][f]=='n'){
+            printf("\nnot favouritable");
+        }
     }
     else
     {
